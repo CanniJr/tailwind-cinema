@@ -2,6 +2,7 @@ This is a web app created using NEXT.js (a React Framework) and designed with ta
     Packages added:
     - Tailwind CSS (https://tailwindcss.com/docs/guides/nextjs for a guide on installing Tailwind CSS on a  NEXT app)
     - JIT (Just in Time Compiler) for Tailwind CSS
+    - Hero Icons
 
     - Benefits of using NEXT.js:
         1. Server Side Rendering

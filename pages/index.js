@@ -6,9 +6,8 @@ export default function Home() {
     <div >
       <Head>
         <title>Tailwind Cinema</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      
       <Header />
     </div>
   )

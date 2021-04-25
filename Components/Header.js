@@ -1,9 +1,12 @@
+import HeaderItem from "./HeaderItem"
+
 function Header() {
     return (
         <header className="">
-            <h1>Header</h1>
+            <div>
+                <HeaderItem title='HOME'/>
+            </div>
         </header>
-
     )
 }
 

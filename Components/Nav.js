@@ -1,4 +1,4 @@
-import reqs from '../Utilities/reqs'
+import reqs from '../utilities/reqs'
 import { useRouter } from 'next/router'
 
 function Nav() {

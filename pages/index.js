@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Header from '../Components/Header'
-import Nav from '../Components/Nav'
-import Results from '../Components/Results'
+import Header from '../components/Header'
+import Nav from '../components/Nav'
+import Results from '../components/Results'
 import reqs from '../utilities/reqs'
 
 export default function Home({ results }) {

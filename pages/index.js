@@ -2,8 +2,10 @@ import Head from 'next/head'
 import Header from '../Components/Header'
 import Nav from '../Components/Nav'
 import Results from '../Components/Results'
+import reqs from '../utilities/reqs'
 
-export default function Home() {
+export default function Home({ results }) {
+
   return (
     <div >
       <Head>
@@ -13,14 +15,22 @@ export default function Home() {
       <Header />
 
       <Nav />
-      <Results />
+      <Results results={ results }/>
     </div>
   )
 }
 
 
+// server-side render the external API as props that is used in the Home function
 export async function getServerSideProps(context){
   const genre = context.query.genre;
 
-  
+  const request = await fetch(`https://api.themoviedb.org/3/${reqs[genre]?.url || reqs.Trending.url}`)
+  .then((resp) => resp.json());
+
+  return {
+    props: {
+      results: request.results,
+    }
+  }
 }
